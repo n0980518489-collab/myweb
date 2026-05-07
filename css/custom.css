@@ -1,0 +1,95 @@
+:root,
+[data-bs-theme=dark] {
+--bs-dark-rgb: 139, 168, 61;
+}
+
+/* 設定手機版螢幕寬度*/
+@media (max-width: 767.98px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* 連結Google 雲端字體,提供用戶一致體驗UX*/
+@import url('https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:wght@387&display=swap');
+
+/* 統一每一個網頁的背景色 */
+/* body {font-family: "微軟正黑體","Chocolate Classical Sans", sans-serif;background: #a51;} */
+body {font-family:"微軟正黑體" "Chiron Hei HK", sans-serif;;background: rgb(178, 207, 241);}
+
+html {font-size: 20px;}
+/* 標題一級文字大小 */
+h1 {font-size: 2rem;}
+/* 標題二級的文字設定,選取器識標籤,影響整體 */
+h2 {font-size: 1.8rem ;font-weight: 800;color: rgb(39,102,229);}
+/* 選取器是類別,影響個別,需要手動套用 */
+.h2-custom-pink:{font-size: 3rem;font-weight:800;color: rgb(255, 0, 195);}
+/* 重要文字標註 */
+.text-pink {color: rgb(255, 0, 195);}
+/*滑鼠移過顏色  */
+.navbar a:hover{
+  color:#ff8800;
+}
+/* 駝峰式命名.與其他CSS衝突 */
+/* 與其他CSS衝突;無法套用無字大小時,可強制優先套用目前樣式 */
+.iconsTitle{
+    font-size: 2rem!important;
+    color: rgb(39,102,229);
+    vertical-align: text-bottom;
+}
+/* 項目清單符號 */
+.list-symbol{list-style-type:circle }
+/* 清單項目色彩 */
+/* li{color: #198754 ;} */
+/* 旅遊安全頁面的旅遊警示的四個等級文字色彩 */
+/* 灰色表示次要輕微警訊 */
+.text-muted {
+    color: #666666;  
+}
+/* 黃色表示及醒警示 */
+.text-warning {
+    color: #ffdd00;
+}
+/* 橘色表示注意.強調警示 */
+.text-alert {
+    color: #ff8800;
+}
+/* 紅色表示錯誤.危險 */
+.text-danger {
+    color: #cc0000
+    ;
+}
+/* 單獨針對項目/編號清單的符號色彩,優化前
+ul li::marker {
+        color: #198754;
+}
+ol li::marker { 
+    color: #198754;
+}
+/* 單獨針對項目/編號清單的符號色彩,優化後方式ㄧ */
+/* ul li::marker, ol li::marker {
+    color: #198754;
+}  */
+/*  單獨針對項目/編號清單的符號色彩,優化後方式二*/
+li::marker {color: #198754;}
+/* 保留card類別,新增樣式拿掉邊框 */
+.card-no-border {
+    border: none;
+    background: none;
+}
+/* 字體樣式粗細,100-900 */
+/* 類別:個別套用 */
+.text-boldest {
+    font-weight: 900;
+}
+/* 複合:整體套用 */
+#notes h5 {
+    font-weight: 900;
+}
+/* 旅人故事頁圖片裁切 原圖尺寸,父層寬度*/
+.imgCut{
+    width: 100%; 
+    height: 500px;
+    clip:rect(0xp,oxp,290px,0xp);
+    object-fit: cover;
+}
